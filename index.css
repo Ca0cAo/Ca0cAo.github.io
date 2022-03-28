@@ -1,0 +1,90 @@
+/*nav三个框分开 全部向左浮动
+用iframe内联框架展示子页面，即软件Subtitle Edit简单操作流程
+*/
+#title{
+    background-color:#8fc5dfc9;
+    font-family:fantasy;
+    font-weight: 500;
+    font-size: 90px;
+    text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    margin-bottom: -60px;
+}
+#intro{
+    line-height: 0;
+    font-family:Verdana;
+    font-size: 30px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+/*冻结水平导航栏的一些失败尝试（并没有搞清楚原因...）*/
+/*#nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+} 
+ul{
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+}
+
+li{
+    background-color: #93b0bebe;
+    display:inline;
+    padding:25px;
+    font-family:fantasy;
+    font-size: 30px;
+    font-weight: 200;
+}*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 8%;
+  overflow: hidden;
+  background-color:#8fc5dfc9;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+}
+
+li a {
+    height: 100%;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 30px 68px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(88, 161, 245);
+}
+
+.active {
+  background-color: rgb(46, 98, 133);
+}
+
+#content{
+    position:relative;
+    bottom:0;
+    overflow: auto;
+}
+
+#footer{
+    background-color:#8fc5dfc9;
+    height:45px;
+    text-align: center;
+}
